@@ -10,13 +10,13 @@ namespace Eunomia.NET.Exceptions.Admin
         }
 
         public RuleExecutionSetDeregistrationException(string message)
-            :base(message)
+            : base(message)
         {
             
         }
 
         public RuleExecutionSetDeregistrationException(string message, Exception inner)
-            :base(message, inner)
+            : base(message, inner)
         {
             
         }

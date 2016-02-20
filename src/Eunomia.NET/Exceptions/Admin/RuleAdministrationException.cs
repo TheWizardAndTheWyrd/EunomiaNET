@@ -10,13 +10,13 @@ namespace Eunomia.NET.Exceptions.Admin
         }
 
         public RuleAdministrationException(string message)
-            :base(message)
+            : base(message)
         {
             
         }
 
         public RuleAdministrationException(string message, Exception inner)
-            :base(message, inner)
+            : base(message, inner)
         {
             
         }
