@@ -2,6 +2,10 @@
 {
     public interface IRuleExecutionSetMetadata
     {
-        string Uri { get; } 
+        string Uri { get; }
+
+        string Name { get; }
+
+        string Description { get; }
     }
 }
