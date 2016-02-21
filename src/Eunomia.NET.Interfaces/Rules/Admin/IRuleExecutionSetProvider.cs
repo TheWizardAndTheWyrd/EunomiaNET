@@ -2,7 +2,7 @@
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace Eunomia.NET.Interfaces.Admin
+namespace Eunomia.NET.Interfaces.Rules.Admin
 {
     public interface IRuleExecutionSetProvider
     {

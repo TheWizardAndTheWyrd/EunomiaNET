@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Eunomia.NET.Interfaces.Admin
+namespace Eunomia.NET.Interfaces.Rules.Admin
 {
     public interface IRuleAdministrator
     {

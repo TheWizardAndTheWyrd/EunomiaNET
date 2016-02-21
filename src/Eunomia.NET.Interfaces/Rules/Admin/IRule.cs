@@ -1,4 +1,4 @@
-﻿namespace Eunomia.NET.Interfaces.Admin
+﻿namespace Eunomia.NET.Interfaces.Rules.Admin
 {
     public interface IRule
     {

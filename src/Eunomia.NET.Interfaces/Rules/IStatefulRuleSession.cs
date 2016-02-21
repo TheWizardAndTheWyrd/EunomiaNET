@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Eunomia.NET.Interfaces
+namespace Eunomia.NET.Interfaces.Rules
 {
     public interface IStatefulRuleSession : IRuleSession
     {

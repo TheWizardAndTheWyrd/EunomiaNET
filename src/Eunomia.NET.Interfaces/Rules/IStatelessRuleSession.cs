@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Eunomia.NET.Interfaces
+namespace Eunomia.NET.Interfaces.Rules
 {
     public interface IStatelessRuleSession : IRuleSession
     {

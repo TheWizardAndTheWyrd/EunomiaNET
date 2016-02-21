@@ -1,4 +1,4 @@
-﻿namespace Eunomia.NET.Interfaces
+﻿namespace Eunomia.NET.Interfaces.Rules
 {
     public interface IRuleExecutionSetMetadata
     {

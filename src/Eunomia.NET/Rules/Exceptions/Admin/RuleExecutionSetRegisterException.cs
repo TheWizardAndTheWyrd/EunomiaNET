@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Eunomia.NET.Exceptions.Admin
+namespace Eunomia.NET.Rules.Exceptions.Admin
 {
     public class RuleExecutionSetRegisterException : Exception
     {

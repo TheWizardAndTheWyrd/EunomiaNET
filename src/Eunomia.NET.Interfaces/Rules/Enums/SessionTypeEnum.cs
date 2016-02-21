@@ -1,4 +1,4 @@
-﻿namespace Eunomia.NET.Interfaces.Enums
+﻿namespace Eunomia.NET.Interfaces.Rules.Enums
 {
     public enum SessionTypeEnum
     {

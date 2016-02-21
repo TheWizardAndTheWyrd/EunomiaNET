@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Eunomia.NET.Exceptions
+namespace Eunomia.NET.Rules.Exceptions
 {
     public class RuleException : Exception
     {
