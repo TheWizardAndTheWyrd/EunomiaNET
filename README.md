@@ -10,19 +10,16 @@
 
  ```
  
- Eunomia.NET
- ===========
+# Eunomia.NET
 
- Eunomia.NET is a cross-platform implementation of [JSR 94](https://jcp.org/en/jsr/detail?id=94)
- for the CLR/.NET, and written in C#.
+Eunomia.NET is a cross-platform implementation of [JSR 94](https://jcp.org/en/jsr/detail?id=94)
+for the CLR/.NET, and written in C#.
  
- Who is Eunomia?
- ===============
+## Who is Eunomia?
  
- Eunomia is the name of an ancient Greek goddess that presided over laws, rulings, and governance.
+Eunomia is the name of an ancient Greek goddess that presided over laws, rulings, and governance.
  
- Why the MIT License?
- ====================
- 
- Philosophically speaking, most the FOSS released by The Wizard & The Wyrd, LLC is released under
- the MIT License to that a wider range of business entities may use our software without restriction.
+## Why the MIT License?
+
+Philosophically speaking, most the FOSS released by The Wizard & The Wyrd, LLC is released under
+the MIT License to that a wider range of business entities may use our software without restriction.
