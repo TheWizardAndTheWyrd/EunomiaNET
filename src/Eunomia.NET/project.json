@@ -5,8 +5,10 @@
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
-
   "frameworks": {
     "net451": { }
+  },
+  "dependencies": {
+    "Eunomia.NET.Interfaces": "1.0.0-*"
   }
 }
