@@ -13,5 +13,7 @@ namespace Eunomia.NET.Interfaces.Rules.Admin
         string DefaultObjectFilter { get; set; }
 
         IEnumerable<object> Rules { get; }
+
+        IEngine Engine { get; }
     }
 }

@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
+using System.Xml;
 
 namespace Eunomia.NET.Interfaces.Rules.Admin
 {
     public interface ILocalRuleExecutionSetProvider
     {
-        IRuleExecutionSet CreateRuleExecutionSet(System.IO.StreamReader inputStream, IDictionary<object, object> collection);
+        IRuleExecutionSet CreateRuleExecutionSet(System.IO.StreamReader inputStream, IDictionary<object, object> props);
 
-        IRuleExecutionSet CreateRuleExecutionSet(System.IO.Stream stream, IDictionary<object, object> collection);
+        IRuleExecutionSet CreateRuleExecutionSet(System.IO.Stream stream, IDictionary<object, object> props);
 
-        IRuleExecutionSet CreatRuleExecutionSet(object input, IDictionary<object, object> collection);
+        IRuleExecutionSet CreateRuleExecutionSet(object input, IDictionary<object, object> props);
     }
 }

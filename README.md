@@ -14,6 +14,13 @@
 
 Eunomia.NET is a cross-platform implementation of [JSR 94](https://jcp.org/en/jsr/detail?id=94)
 for the CLR/.NET, and written in C#.
+
+## Architecture
+
+There may be more than a few instances where there are abstractions in the reference implementation
+that can be expressed in more idiomatic C# compared to the reference's Java style.  Where it makes sense,
+I am introducing said idiomatic changes while keeping the interfaces as close to the reference implementation
+as possible.
  
 ## Who is Eunomia?
  
