@@ -3,6 +3,10 @@ using System.Reflection;
 
 namespace Eunomia.NET.Util
 {
+    /// <summary>
+    /// TODO: Research implementing the IDisposable interface so that handles to assemblies are properly disposed.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class ClassLoader<T>
     {
         public object ActivatedObject { get; private set; }

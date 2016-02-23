@@ -4,22 +4,35 @@ using Eunomia.NET.Interfaces.Rules.Admin;
 
 namespace Eunomia.NET.Rules
 {
-    public abstract class RuleServiceProvider<T>
+    public class RuleServiceProvider<T>
     {
-        ClassLoader<T> ClassLoader { get; set; }
+        public ClassLoader<T> ClassLoader { get; set; }
 
-        IRuleRuntime RuleRuntime { get; set; }
+        public IRuleRuntime RuleRuntime { get; set; }
 
-        IRuleAdministrator RuleAdministrator { get; set; }
+        public IRuleAdministrator RuleAdministrator { get; set; }
 
-        public virtual T CreateInstance(string assemblyName)
+        //public virtual T CreateInstance(string assemblyName)
+        //{
+        //    if (this.ClassLoader == null)
+        //    {
+        //        this.ClassLoader = new ClassLoader<T>(assemblyName);
+        //    }
+
+        //    return this.ClassLoader.Activate();
+        //}
+    }
+
+    public static class RuleServiceProviderExtensions
+    {
+        public static T CreateInstance<T>(this RuleServiceProvider<T> ruleServiceProvider, string assemblyName)
         {
-            if (this.ClassLoader == null)
+            if (ruleServiceProvider.ClassLoader == null)
             {
-                this.ClassLoader = new ClassLoader<T>(assemblyName);
+                ruleServiceProvider.ClassLoader = new ClassLoader<T>(assemblyName);
             }
 
-            return this.ClassLoader.Activate();
+            return ruleServiceProvider.ClassLoader.Activate();
         }
     }
 }
