@@ -7,7 +7,20 @@ namespace Eunomia.NET.Rules
 {
     public abstract class RuleServiceProviderManager<T>
     {
-        public virtual IDictionary<Uri, object> RegistrationMap { get; private set; }
+        private IDictionary<Uri, object> _registrationMap; 
+
+        public virtual IDictionary<Uri, object> RegistrationMap
+        {
+            get
+            {
+                if (_registrationMap != null)
+                {
+                    return _registrationMap;
+                }
+                throw new Exception("No RegistrationMap.");
+            }
+            private set { this._registrationMap = value; }
+        }
 
         public virtual void RegisterRuleServiceProvider(string uri, string assemblyName)
         {
@@ -28,5 +41,30 @@ namespace Eunomia.NET.Rules
                 throw new ConfigurationException($"Could not register driver: {assemblyName} against URI: {uri}", e);
             }
         }
+
+        public virtual void DeregisterRuleServiceProvider(string uri)
+        {
+            try
+            {
+                RegistrationMap?.Remove(new Uri(uri));
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Unable to deregister device at: {uri}", e);
+            }
+        }
+
+        public virtual RuleServiceProvider<T> GetServiceProvider(string uri)
+        {
+            try
+            {
+                var ruleServiceProvider = (RuleServiceProvider<T>) RegistrationMap[new Uri(uri)];
+                return ruleServiceProvider;
+            }
+            catch (Exception e)
+            {
+                throw new ConfigurationException($"No RuleServiceProvider registered at: {uri}", e);
+            }
+        } 
     }
 }
