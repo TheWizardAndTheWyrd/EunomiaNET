@@ -2,16 +2,19 @@
 
 namespace Eunomia.NET.Rules
 {
+    /// <summary>
+    /// I'm not sure why this class is useful.  Is it used as a base class?
+    /// It appears to only pass an object through the Filter method.
+    /// </summary>
     public class ObjectFilter : IObjectFilter
     {
         public object Filter(object filter)
         {
-            throw new System.NotImplementedException();
+            return filter;
         }
 
         public void Reset()
         {
-            throw new System.NotImplementedException();
         }
     }
 }
